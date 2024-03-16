@@ -44,7 +44,3 @@ Welcome to InstaDogs, a web application where users can share pictures of their 
 - TensorFlow/Keras: Deep learning model for dog image classification.
 - PIL (Python Imaging Library): Image processing and manipulation.
 - SQLite: Lightweight SQL database for user authentication and session management.
-
-## CONTRIBUTORS
-
-- Nuno Jeronimo: https://github.com/nunojeronimos
