@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile - InstaDogs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='profile.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='dashboard.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='navbar.css') }}"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <img
+          class="logo"
+          src="{{ url_for('static', filename='images/logo.png') }}"
+          alt="InstaDogs Logo"
+        />
+        <div class="navbar-search">
+          <input type="text" placeholder="Search" />
+        </div>
+        <nav class="navbar-nav">
+          <a href="{{ url_for('dashboard') }}">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Notifications</a>
+          <a href="{{ url_for('profile') }}">Profile</a>
+          <input type="file" id="file-upload" accept="image/*" />
+
+          <img
+            id="upload-button"
+            class="logo"
+            src="{{ url_for('static', filename='images/icon.png') }}"
+          />
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="user-profile">
+        <h2>Profile</h2>
+        {% for i in range(0, image_urls|length, 3) %}
+        <div class="row">
+          {% for j in range(3) %} {% set index = i + j %} {% if index <
+          image_urls|length %}
+          <div class="image-box">
+            <img src="{{ image_urls[index] }}" alt="Uploaded Image" />
+          </div>
+          {% endif %} {% endfor %}
+        </div>
+        {% endfor %}
+      </section>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.user-profile .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.user-profile .image-box {
+  width: calc(33.33% - 10px);
+  box-sizing: border-box;
+}
+
+.user-profile .image-box img {
+  width: 100%;
+  display: block;
+}
+
+.user-profile h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profile .image-box {
+    width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .user-profile .image-box {
+    width: 100%;
+  }
+}

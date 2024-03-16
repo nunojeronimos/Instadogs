@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .navbar-search input {
+  border: 1px solid #ccc; /* Gray border */
+  padding: 8px;
+  border-radius: 20px; /* Rounded border */
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-nav a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  margin: 0 15px; /* Adjust spacing between links */
+  font-weight: bold;
+}
+
+.navbar .navbar-nav input[type="file"] {
+  display: none; /* Hide file input by default */
+}
+
+.navbar .navbar-upload-button {
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+  border: 1px solid #333; /* Dark border */
+  border-radius: 20px; /* Rounded border */
+  padding: 8px 15px; /* Adjust padding */
+  cursor: pointer;
+}
+
+.navbar .navbar-upload-button:hover {
+  background-color: #333; /* Dark background color on hover */
+  color: #fff; /* White text color on hover */
+}

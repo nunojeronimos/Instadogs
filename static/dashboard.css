@@ -1,0 +1,165 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.search input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.main-content {
+  margin: 20px 0;
+  display: flex;
+}
+
+.posts {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.post {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.post-image-container {
+  flex: 1;
+  max-width: 400px; /* Set a maximum width for the image container */
+  margin-right: 10px; /* Optional: Add some spacing between images */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.post-time {
+  color: #888;
+  font-size: 12px;
+}
+
+.post-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-image {
+  max-width: 100%; /* Ensure the image resizes based on the container width */
+  max-height: 100%; /* Set the maximum height to maintain aspect ratio */
+  width: auto; /* Allow the image to maintain its aspect ratio */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-comments {
+  padding: 10px;
+}
+
+.comment {
+  margin-bottom: 5px;
+}
+
+/* Styles for Sidebar */
+.user-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.suggested-users h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.suggested-users ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suggested-users li a {
+  text-decoration: none;
+  color: #333;
+}
