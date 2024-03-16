@@ -4,15 +4,15 @@ Welcome to InstaDogs, a web application where users can share pictures of their 
 
 ## Features
 
-User Authentication: InstaDogs implements user authentication to ensure secure access to user profiles. Users can log in using their username and password.
+- User Authentication: InstaDogs implements user authentication to ensure secure access to user profiles. Users can log in using their username and password.
 
-Dashboard: Upon logging in, users are directed to their dashboard, where they can view a feed of uploaded dog images from themselves and other users. The dashboard displays images in chronological order, allowing users to see the most recent posts first.
+- Dashboard: Upon logging in, users are directed to their dashboard, where they can view a feed of uploaded dog images from themselves and other users. The dashboard displays images in chronological order, allowing users to see the most recent posts first.
 
-Profile: Users have their own profile page where they can view all the images they've uploaded. This page provides a personalized space for users to showcase their favorite dog photos.
+- Profile: Users have their own profile page where they can view all the images they've uploaded. This page provides a personalized space for users to showcase their favorite dog photos.
 
-Upload: InstaDogs enables users to upload images of their dogs directly from their devices. The application automatically adjusts the size and aspect ratio of the uploaded images to ensure they fit Instagram's requirements.
+- Upload: InstaDogs enables users to upload images of their dogs directly from their devices. The application automatically adjusts the size and aspect ratio of the uploaded images to ensure they fit Instagram's requirements.
 
-Image Classification: InstaDogs includes a machine learning model that can classify uploaded images to determine if they contain dogs. This feature helps maintain the theme of the application and ensures that only relevant content is shared.
+- Image Classification: InstaDogs includes a machine learning model that can classify uploaded images to determine if they contain dogs. This feature helps maintain the theme of the application and ensures that only relevant content is shared.
 
 ## FILE STRUCTURE
 
